@@ -1,19 +1,19 @@
 import PropTypes from 'prop-types';
-import css from './ProfileDescription.module.css';
+import cl from './ProfileDescription.module.css';
 
 const ProfileDescription = ({ username, tag, location, avatar }) => {
   return (
-    <div className={css.description}>
+    <div className={cl.description}>
       <img
         src={avatar}
         width="260"
         height="210"
         alt="User avatar"
-        className={css.avatar}
+        className={cl.avatar}
       />
-      <p className={css.name}>{username}</p>
-      <p className={css.tag}>@{tag}</p>
-      <p className={css.location}>{location}</p>
+      <p className={cl.name}>{username}</p>
+      <p className={cl.tag}>@{tag}</p>
+      <p className={cl.location}>{location}</p>
     </div>
   );
 };

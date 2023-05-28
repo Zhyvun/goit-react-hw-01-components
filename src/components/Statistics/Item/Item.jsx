@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import css from './Item.module.css';
+import cl from './Item.module.css';
 
 const Item = ({ label, percentage }) => {
   return (
     <Fragment>
-      <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}%</span>
+      <span className={cl.label}>{label}</span>
+      <span className={cl.percentage}>{percentage}%</span>
     </Fragment>
   );
 };
