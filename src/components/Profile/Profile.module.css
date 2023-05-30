@@ -5,3 +5,83 @@
   width: 450px;
   overflow: hidden;
 }
+.description {
+  background-color: #eff5f6;
+  padding: 35px;
+  text-align: center;
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.name {
+  font-weight: 700;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+}
+.tag {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  color: #969494;
+}
+.location {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  color: #969494;
+}
+.stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+
+.stats::before,
+.stats::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #ccc;
+}
+
+.stats::before {
+  left: calc(33.33% - 0.5px);
+}
+
+.stats::after {
+  right: calc(33.33% - 0.5px);
+}
+
+.stats > li {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae4e8;
+}
+.label {
+  font-weight: 600;
+  font-size: 18px;
+  color: #969494;
+  margin-bottom: 10px;
+}
+.quantity {
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+}

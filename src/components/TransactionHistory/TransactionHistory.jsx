@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Operation from './Operation/Operation';
 import cl from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
@@ -14,7 +13,11 @@ const TransactionHistory = ({ items }) => {
       </thead>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <Operation key={id} type={type} amount={amount} currency={currency} />
+          <tr key={id}>
+            <td>{type}</td>
+            <td>{amount}</td>
+            <td>{currency}</td>
+          </tr>
         ))}
       </tbody>
     </table>
